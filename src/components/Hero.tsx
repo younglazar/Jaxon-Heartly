@@ -32,7 +32,7 @@ export default function Hero() {
                             href="/music"
                             className="px-8 py-4 bg-clay-red text-cream font-bold uppercase tracking-wider hover:bg-burnt-orange transition-colors text-center"
                         >
-                            Listen to Latest Single
+                            Listen to latest music
                         </Link>
                         <Link
                             href="/videos"
