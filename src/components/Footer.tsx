@@ -1,12 +1,8 @@
 import Link from "next/link";
-import { Facebook, Instagram, Youtube, Music } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
 
 const socialLinks = [
-    { name: "Spotify", icon: Music, href: "#" },
-    { name: "Apple Music", icon: Music, href: "#" },
-    { name: "TikTok", icon: Music, href: "#" },
     { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/jaxonheartly?igsh=MWxpeWxrMnJxZjJ4Zw%3D%3D&utm_source=qr" },
-    { name: "YouTube", icon: Youtube, href: "#" },
     { name: "Facebook", icon: Facebook, href: "https://www.facebook.com/profile.php?id=61584776580036" },
 ];
 
