@@ -10,7 +10,7 @@ export default function Hero() {
                     src="/images/hero-v2.png"
                     alt="Jaxon Heartly playing guitar on a porch"
                     fill
-                    className="object-cover object-top"
+                    className="object-cover object-[35%_0]"
                     priority
                 />
                 {/* Overlay */}
