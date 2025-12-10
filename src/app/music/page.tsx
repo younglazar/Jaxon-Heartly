@@ -26,7 +26,7 @@ export default function MusicPage() {
             {/* Links Section */}
             <div className="w-full max-w-md space-y-4 animate-fade-in-up delay-100">
                 <a
-                    href="#"
+                    href="https://open.spotify.com/artist/1nQElUopch4pNrRu91KXK2?si=MHj2rCaQSkOcZILn-jE4CA"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-3 w-full p-4 bg-charcoal text-cream rounded-lg hover:bg-clay-red hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group"
@@ -36,7 +36,7 @@ export default function MusicPage() {
                 </a>
 
                 <a
-                    href="#"
+                    href="https://music.apple.com/us/artist/jaxon-heartly/1859693224"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-3 w-full p-4 bg-charcoal text-cream rounded-lg hover:bg-clay-red hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group"
