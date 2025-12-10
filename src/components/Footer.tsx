@@ -1,9 +1,12 @@
 import Link from "next/link";
-import { Facebook, Instagram } from "lucide-react";
+import { Facebook, Instagram, Youtube, Music } from "lucide-react";
 
 const socialLinks = [
     { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/jaxonheartly?igsh=MWxpeWxrMnJxZjJ4Zw%3D%3D&utm_source=qr" },
     { name: "Facebook", icon: Facebook, href: "https://www.facebook.com/profile.php?id=61584776580036" },
+    { name: "Youtube", icon: Youtube, href: "https://www.youtube.com/@JaxonHeartly" },
+    { name: "Spotify", icon: Music, href: "https://open.spotify.com/artist/1nQElUopch4pNrRu91KXK2?si=MHj2rCaQSkOcZILn-jE4CA" },
+    { name: "Apple Music", icon: Music, href: "https://music.apple.com/us/artist/jaxon-heartly/1859693224" },
 ];
 
 const footerLinks = [
