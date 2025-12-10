@@ -33,11 +33,14 @@ export default function Hero() {
                         >
                             Listen to latest music
                         </div>
-                        <div
-                            className="px-8 py-4 bg-transparent border-2 border-cream text-cream font-bold uppercase tracking-wider text-center cursor-default"
+                        <a
+                            href="https://www.youtube.com/@JaxonHeartly"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-8 py-4 bg-transparent border-2 border-cream text-cream font-bold uppercase tracking-wider hover:bg-cream hover:text-charcoal transition-colors text-center"
                         >
                             Watch Official Videos
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
