@@ -1,56 +1,57 @@
 import Image from "next/image";
-import { Play, Music } from "lucide-react";
-import Section from "@/components/Section";
+import { Music } from "lucide-react";
 
 export default function MusicPage() {
     return (
-        <div className="pt-20">
-            <Section className="bg-charcoal text-cream min-h-[60vh] flex items-center">
-                <div className="flex flex-col md:flex-row items-center gap-12 w-full">
-                    <div className="w-full md:w-1/2 relative aspect-square max-w-md mx-auto">
-                        <Image
-                            src="/images/album.png"
-                            alt="Latest Release"
-                            fill
-                            className="object-cover shadow-2xl"
-                        />
-                    </div>
-                    <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
-                        <span className="text-clay-red font-bold tracking-widest uppercase">Latest Release</span>
-                        <h1 className="font-serif text-5xl md:text-6xl font-bold">Southern Roots</h1>
-                        <p className="text-xl text-cream/80">
-                            A soulful journey through the heart of Georgia.
-                        </p>
-                        <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
-                            <button className="flex items-center gap-2 px-8 py-4 bg-green-600 hover:bg-green-700 text-white font-bold rounded-full transition-colors">
-                                <Music size={20} /> Listen on Spotify
-                            </button>
-                            <button className="flex items-center gap-2 px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-bold rounded-full transition-colors">
-                                <Music size={20} /> Apple Music
-                            </button>
-                        </div>
-                    </div>
+        <div className="min-h-screen pt-24 pb-12 px-4 flex flex-col items-center justify-center bg-cream">
+            {/* Profile Section */}
+            <div className="text-center space-y-4 mb-10 animate-fade-in-up">
+                <div className="relative w-32 h-32 mx-auto round-full overflow-hidden shadow-xl border-4 border-white">
+                    <Image
+                        src="/images/hero-v2.png"
+                        alt="Jaxon Heartly"
+                        fill
+                        className="object-cover object-[35%_0]"
+                        priority
+                    />
                 </div>
-            </Section>
+                <h1 className="font-serif text-3xl md:text-4xl font-bold text-charcoal">
+                    Jaxon Heartly
+                </h1>
+                <p className="text-charcoal/60 font-medium tracking-wide">
+                    Clay, Soul, and Country Stories
+                </p>
+            </div>
 
-            <Section className="bg-cream">
-                <h2 className="font-serif text-4xl font-bold text-charcoal mb-12 text-center">Upcoming Releases</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                    {[1, 2].map((item) => (
-                        <div key={item} className="flex gap-6 items-center bg-white p-6 rounded-lg shadow-sm border border-clay-red/10">
-                            <div className="w-24 h-24 bg-charcoal/10 flex-shrink-0 relative">
-                                {/* Placeholder art */}
-                                <div className="absolute inset-0 flex items-center justify-center text-charcoal/30 font-bold">?</div>
-                            </div>
-                            <div>
-                                <h3 className="font-bold text-xl text-charcoal">Untitled Track {item}</h3>
-                                <p className="text-clay-red">Coming Soon</p>
-                                <button className="mt-2 text-sm text-charcoal/60 underline hover:text-charcoal">Pre-save</button>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </Section>
+            {/* Links Section */}
+            <div className="w-full max-w-md space-y-4 animate-fade-in-up delay-100">
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-3 w-full p-4 bg-charcoal text-cream rounded-lg hover:bg-clay-red hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group"
+                >
+                    <Music className="group-hover:rotate-12 transition-transform duration-300" />
+                    <span className="font-bold tracking-wider uppercase">Listen on Spotify</span>
+                </a>
+
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-3 w-full p-4 bg-charcoal text-cream rounded-lg hover:bg-clay-red hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group"
+                >
+                    <Music className="group-hover:rotate-12 transition-transform duration-300" />
+                    <span className="font-bold tracking-wider uppercase">Listen on Apple Music</span>
+                </a>
+            </div>
+
+            {/* Footer Note */}
+            <div className="mt-12 text-center animate-fade-in-up delay-200">
+                <p className="text-sm text-charcoal/40 font-light">
+                    Join the journey.
+                </p>
+            </div>
         </div>
     );
 }

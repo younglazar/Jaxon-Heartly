@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function Hero() {
@@ -28,11 +29,12 @@ export default function Hero() {
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                        <div
-                            className="px-8 py-4 bg-clay-red text-cream font-bold uppercase tracking-wider text-center cursor-default"
+                        <Link
+                            href="/music"
+                            className="px-8 py-4 bg-clay-red text-cream font-bold uppercase tracking-wider hover:bg-burnt-orange transition-colors text-center"
                         >
                             Listen to latest music
-                        </div>
+                        </Link>
                         <a
                             href="https://www.youtube.com/@JaxonHeartly"
                             target="_blank"
